@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+{{> header }}
+<div style="text-align:center;">
+    <form action="/weather" method="get">
+        <input type="text" name="city" required placeholder="Введите город">
+        <button type="submit">Знайти</button>
+    </form>
+</div>
+{{> footer }}
+</body>
+</html>
