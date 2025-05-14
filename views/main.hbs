@@ -3,13 +3,27 @@
 <head>
     <title>WeatherApp</title>
     <link rel="stylesheet" href="/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.js"></script>
+<script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      palette: {
+        popup: { background: "#000" },
+        button: { background: "#f2d600" }
+      },
+      theme: "classic",
+      content: { message: "Цей сайт використовує cookie", dismiss: "Зрозуміло", link: "Детальніше" }
+    })
+  });
+</script>
 </head>
 <body>
 {{> header }}
-<div style="text-align:center;">
+<div style="text-align: center;">
+    <h2>Введіть місто для отримання погоди</h2>
     <form action="/weather" method="get">
-        <input type="text" name="city" required placeholder="Введите город">
-        <button type="submit">Знайти</button>
+        <input type="text" name="city" placeholder="Введіть місто">
+        <button type="submit">Показати погоду</button>
     </form>
 </div>
 {{> footer }}
