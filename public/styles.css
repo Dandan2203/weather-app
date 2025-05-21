@@ -25,7 +25,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #4a75a8;
+    background-color: #5882b4;
     border-radius: 5px;
 }
 
@@ -34,7 +34,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100vw;
-    background-color: #5f8ed0;
+    background-color: #5882b4;
     color: white;
     text-align: center;
     padding: 1em 0;
